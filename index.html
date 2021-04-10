@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Selector</title>
+
+    <style>
+        #box1 {
+            width: 30%;
+            padding: 10px;
+            background-color: teal;
+            color: white;
+            margin: auto;
+        }
+        
+        #box2 {
+            width: 30%;
+            padding: 10px;
+            background-color: red;
+            color: white;
+            margin: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="box1">
+        <h1>box 1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, quasi molestias ipsam explicabo excepturi quas?</p>
+    </div>
+    <div id="box2">
+        <h1>box 2</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, quasi molestias ipsam explicabo excepturi quas?</p>
+    </div>
+    <ul>
+        <li>Lorem, ipsum.</li>
+        <li>Ut, quod?</li>
+        <li>Quidem, alias?</li>
+        <li>Veritatis, atque.</li>
+        <li>Magni, quod.</li>
+    </ul>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+
+            $("#box1").css("border", "5px solid yellow");
+            $("h1,p").css("border", "5px solid green");
+            $("h1,#box2").css("border", "5px solid black");
+            $("ul li:last-child").css("border", "5px solid hotpink");
+            $("ul li:first-child").css("border", "5px solid hotpink");
+            $("ul li:eq(2)").css("border", "5px solid green");
+            $("ul li:gt(2)").css("border", "5px solid blue");
+            $("ul li:lt(2)").css("border", "5px solid orange");
+
+
+
+
+
+
+
+
+        });
+    </script>
+</body>
+
+</html>
